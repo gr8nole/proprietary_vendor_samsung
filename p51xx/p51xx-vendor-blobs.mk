@@ -16,7 +16,6 @@ LOCAL_PATH := vendor/samsung/p51xx
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/common/system/bin/bintvoutservice:system/bin/bintvoutservice \
-    $(LOCAL_PATH)/common/system/bin/dock_kbd_attach:system/bin/dock_kbd_attach \
     $(LOCAL_PATH)/common/system/bin/geomagneticd:system/bin/geomagneticd \
     $(LOCAL_PATH)/common/system/bin/gpsd:system/bin/gpsd \
     $(LOCAL_PATH)/common/system/bin/orientationd:system/bin/orientationd \
@@ -32,7 +31,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/common/system/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/common/system/lib/hw/vendor-camera.piranha.so:system/lib/hw/vendor-camera.piranha.so \
+    $(LOCAL_PATH)/common/system/lib/hw/camera.vendor.piranha.so:system/lib/hw/camera.vendor.piranha.so \
     $(LOCAL_PATH)/common/system/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so \
     $(LOCAL_PATH)/common/system/lib/hw/sensors.omap4.so:system/lib/hw/sensors.omap4.so \
     $(LOCAL_PATH)/common/system/lib/libtiutils.so:system/lib/libtiutils.so
@@ -62,7 +61,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/common/system/vendor/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/common/system/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+    $(LOCAL_PATH)/common/system/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
+    $(LOCAL_PATH)/common/system/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
     $(LOCAL_PATH)/common/system/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    $(LOCAL_PATH)/common/system/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
-    $(LOCAL_PATH)/common/system/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
+    $(LOCAL_PATH)/common/system/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+    $(LOCAL_PATH)/common/system/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    $(LOCAL_PATH)/common/system/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
