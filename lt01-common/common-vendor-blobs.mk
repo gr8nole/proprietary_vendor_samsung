@@ -32,7 +32,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
-    $(LOCAL_PATH)/proprietary/system/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
+    $(LOCAL_PATH)/proprietary/system/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
+    $(LOCAL_PATH)/proprietary/system/lib/hw/vendor-camera.smdk4x12.so:system/lib/hw/camera.vendor.smdk4x12.so
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/etc/srm.bin:system/etc/srm.bin
